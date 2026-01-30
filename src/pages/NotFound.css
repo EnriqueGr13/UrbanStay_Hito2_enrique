@@ -1,0 +1,47 @@
+.notfound {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.notfound__content {
+  max-width: 500px;
+}
+
+.notfound h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  color: #9381ff;
+}
+
+.notfound h2 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.notfound p {
+  color: #555;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+/* Botón */
+.notfound__button {
+  display: inline-block;
+  padding: 12px 22px;
+  background-color: #9381ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.notfound__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(147, 129, 255, 0.35);
+}

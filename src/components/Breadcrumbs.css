@@ -1,0 +1,28 @@
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 24px auto 0;
+  padding: 0 24px;
+
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #9381ff;
+  font-weight: 500;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs__separator {
+  margin: 0 6px;
+  color: #999;
+}
+
+.breadcrumbs__current {
+  color: #333;
+  font-weight: 600;
+}

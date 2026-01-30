@@ -1,0 +1,64 @@
+/* =========================
+   VIEW TOGGLE (GRID / LIST)
+========================= */
+
+.view-toggle {
+  max-width: 1200px;
+  margin: 24px auto 0;
+  padding: 0 24px;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.view-toggle button {
+  background: none;
+  border: 2px solid #9381ff;
+  border-radius: 8px;
+  padding: 6px 8px;
+
+  cursor: pointer;
+  color: #9381ff;
+  font-size: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+}
+
+.view-toggle button:hover,
+.view-toggle button.active {
+  background-color: #9381ff;
+  color: #ffffff;
+}
+
+/* =========================
+   PRODUCTS - GRID VIEW
+========================= */
+
+.products.grid {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 24px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* =========================
+   PRODUCTS - LIST VIEW
+========================= */
+
+.products.list {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

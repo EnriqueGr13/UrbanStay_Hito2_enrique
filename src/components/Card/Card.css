@@ -1,0 +1,167 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+
+  /* cursor: pointer; */
+  border: 2px solid #9a8c98;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+    filter: drop-shadow(2px 2px 2px #9381ff);
+}
+
+/* Imagen */
+.card__image {
+  position: relative;
+}
+
+.card__image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Favorito */
+.card__fav {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 36px;
+  height: 36px;
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  color: #aaa;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+.card__fav:hover{
+    transform: scale(1.2);
+    background-color: #dee2e6;
+}
+
+.card__fav.active {
+  color: #9381ff;
+}
+
+.card__fav svg {
+  font-size: 1.1rem;
+}
+
+/* Contenido */
+.card__content {
+  padding: 16px;
+}
+
+.card__content h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.card__description {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.card__price {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Flechas del carrusel */
+.card__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  background: none;
+  border: none;
+  border-radius: 50%;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card__arrow.left {
+  left: 8px;
+}
+
+.card__arrow.right {
+  right: 8px;
+}
+
+.card__arrow:hover {
+  transform: translateY(-50%) scale(1.15);
+}
+
+.card__arrow svg {
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+
+.card.list {
+  flex-direction: row;
+  height: 160px;
+}
+
+.card.list .card__image {
+  width: 240px;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.card.list .card__image img {
+  height: 100%;
+}
+
+.card.list .card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===============================
+   MODO DETALLE (carrusel grande)
+================================= */
+.card__image--detail {
+  height: 420px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card__image--detail img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__image--detail .card__arrow {
+  font-size: 2rem;
+}
+
+.card__image--detail .card__arrow:hover {
+  transform: translateY(-50%) scale(1.15);
+}

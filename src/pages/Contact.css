@@ -1,0 +1,72 @@
+.contact {
+  padding: 60px 24px;
+}
+
+.contact__container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact h1 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.contact__intro {
+  margin-bottom: 32px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Formulario */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form__group input,
+.form__group textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form__group input:focus,
+.form__group textarea:focus {
+  outline: none;
+  border-color: #9381ff;
+  box-shadow: 0 0 0 2px rgba(147, 129, 255, 0.2);
+}
+
+/* Botón */
+.contact__button {
+  margin-top: 12px;
+  padding: 12px;
+  background-color: #9381ff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.contact__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(147, 129, 255, 0.3);
+}
